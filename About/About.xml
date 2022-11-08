@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ModMetaData>
+    <name>Double Trader Silver</name>
+    <author>Tyler</author>
+    <description>This mod should be save game compatible, I've had no issues. 
+	All this mod does is double the minimum and maximum silver a base/caravan/traveler/ship can have. 
+	I have no coding knowledge so this was done in a very lazy way so it may not be compatible with other mods that change traders inventories.
+	</description>
+    <url>https://github.com/fluffy-mods/ColonyManager</url>
+    <supportedVersions>
+        <li>1.4</li>
+    </supportedVersions>
+</ModMetaData>
