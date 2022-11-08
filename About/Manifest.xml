@@ -2,5 +2,5 @@
 <Manifest>
   <version>1.0</version>
   <manifestUri>https://raw.githubusercontent.com/RockyGateway/DoubleTraderSilver/main/About/Manifest.xml</manifestUri>
-  <downloadUri></downloadUri>
+  <downloadUri>https://github.com/RockyGateway/DoubleTraderSilver/releases/</downloadUri>
 </Manifest>
