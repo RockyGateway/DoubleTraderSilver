@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ModMetaData>
+    <name>Double Trader Silver</name>
+    <author>Tyler</author>
+	<packageId>DoubleTraderSilver.Patch</packageId>
+    <description>This mod should be save game compatible, I've had no issues. 
+	All this mod does is double the minimum and maximum silver a base/caravan/traveler/ship can have. 
+	It should work even without Royalty and should be compatible with all other mods, though I haven't tested.
+	</description>
+    <url>https://github.com/RockyGateway/DoubleTraderSilver</url>
+    <supportedVersions>
+        <li>1.4</li>
+    </supportedVersions>
+</ModMetaData>
