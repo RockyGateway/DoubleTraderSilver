@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<!--Tribal Base-->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/TraderKindDef[defName="Base_Neolithic_Standard"]//thingDef[text()="Silver"]/../countRange</xpath>
+				<value>
+					<countRange>1600~6000</countRange>
+				</value>
+			</li>
+			<!--Tribal Caravan-->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/TraderKindDef[defName="Caravan_Neolithic_BulkGoods" or defName="Caravan_Neolithic_WarMerchant" or defName="Caravan_Neolithic_Slaver" or defName="Caravan_Neolithic_ShamanMerchant"]//thingDef[text()="Silver"]/../countRange</xpath>
+				<value>
+					<countRange>1500~2400</countRange>
+				</value>
+			</li>
+			<!--Industrial Base-->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/TraderKindDef[defName="Base_Outlander_Standard"]//thingDef[text()="Silver"]/../countRange</xpath>
+				<value>
+					<countRange>1600~6000</countRange>
+				</value>
+			</li>
+			<!--Industrial Caravan-->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/TraderKindDef[defName="Caravan_Outlander_BulkGoods" or defName="Caravan_Outlander_CombatSupplier" or defName="Caravan_Outlander_PirateMerchant" or Caravan_Outlander_Exotic]//thingDef[text()="Silver"]/../countRange</xpath>
+				<value>
+					<countRange>1500~2400</countRange>
+				</value>
+			</li>
+			<!-- Orbital -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/TraderKindDef[defName="Orbital_BulkGoods" or defName="Orbital_CombatSupplier" or defName="Orbital_Exotic" or defName="Orbital_PirateMerchant" ]//thingDef[text()="Silver"]/../countRange</xpath>
+				<value>
+					<countRange>4000~10000</countRange>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<!--Royalty Base-->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/TraderKindDef[defName="Base_Empire_Standard"]</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>/Defs/TraderKindDef[defName="Base_Empire_Standard"]//thingDef[text()="Silver"]/../countRange</xpath>
+					<value>
+						<countRange>1600~6000</countRange>
+					</value>
+				</match>
+	</Operation>
+	<!--Royalty Caravan-->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/TraderKindDef[defName="Empire_Caravan_TraderGeneral"]</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>/Defs/TraderKindDef[defName="Empire_Caravan_TraderGeneral"]//thingDef[text()="Silver"]/../countRange</xpath>
+					<value>
+						<countRange>1500~2400</countRange>
+					</value>
+				</match>
+	</Operation>
+	<!--Royalty Ship-->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/TraderKindDef[defName="Orbital_Empire"]</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>/Defs/TraderKindDef[defName="Orbital_Empire"]//thingDef[text()="Silver"]/../countRange</xpath>
+					<value>
+						<countRange>4000~10000</countRange>
+					</value>
+				</match>
+	</Operation>
+</Patch>
