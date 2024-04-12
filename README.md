@@ -1,5 +1,5 @@
 # DoubleTraderSilver
-A mod for RimWorld 1.4.
+A mod for RimWorld 1.5.
 
 This mod doubles the silver that all Caravans\Travlers\Ships\Bases carry.
 
